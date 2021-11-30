@@ -49,9 +49,8 @@ namespace P3ConversionDashboard.Tests
             var sut = RenderComponent<Errors>();
 
             var renderedMarkup = sut.Markup;
-            
-            string expected = "<link href=\"https://fonts.googleapis.com/css?family=Roboto Slab\" rel=\"stylesheet\">\n\n" +
-                              "<div class=\"log-table-formatting\">\r\n";
+
+            string expected = "<link href=\"https://fonts.googleapis.com/css?family=Roboto Slab\" rel=\"stylesheet\">";
             string expected2 = "</div>";
             
             Assert.Contains(expected, renderedMarkup);
